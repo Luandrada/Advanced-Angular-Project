@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress.component.scss']
 })
 export class ProgressComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
