@@ -1,21 +1,17 @@
+import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from "@angular/router"; /// lo necesito exportar para que cualquieir otro modulo pueda hacer uso de el 
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-    { path: 'login', component:LoginComponent }, // no tienen la estructura del Pages 
-    { path: 'register' , component:RegisterComponent},
-]
+
+    { path: 'register', component: RegisterComponent },
+    { path: 'login', component: LoginComponent },
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    RouterModule.forChild( routes)
-  ],
-  exports: [
-    RouterModule,
-  ]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
 })
-export class AuthRoutingModule { }
+export class AuthRoutingModule {}

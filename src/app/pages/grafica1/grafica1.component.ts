@@ -1,20 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-grafica1',
   templateUrl: './grafica1.component.html',
-  styleUrls: ['./grafica1.component.scss']
-})
-export class Grafica1Component implements OnInit {
-
-  labels1:string[]=['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  data1= [
-    [350, 450, 100],
-    [250, 130, 70],
+  styles: [
   ]
-  constructor() { }
+})
+export class Grafica1Component {
 
-  ngOnInit(): void {
-  }
+  public labels1: string[] = ['Pan', 'Refresco', 'Tacos'];
+  public data1 = [
+    [10, 15, 40],
+  ];
 
 }
